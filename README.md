@@ -28,7 +28,7 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-lms-platform.git
+git clone https://github.com/asmirpljakic/next-13-lms.git
 ```
 
 ### Install packages
