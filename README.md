@@ -65,7 +65,7 @@ NEXT_PUBLIC_TEACHER_ID=
 
 ### Setup Prisma
 
-Add MongoDb Database 
+Add MongoDB Database 
 
 ```shell
 npx prisma generate
