@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 import { useDebounce } from '@/hooks/use-debounce';
 
 export const SearchInput = () => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(''.toLowerCase());
   const debouncedValue = useDebounce(value);
 
   const searchParams = useSearchParams();
@@ -37,7 +37,7 @@ export const SearchInput = () => {
     <div className='relative'>
       <Search className='h-4 w-4 absolute top-3 left-3 text-slate-600' />
       <Input
-        onChange={e => setValue(e.target.value)}
+        onChange={e => setValue(e.target.value.toLowerCase())}
         value={value}
         className='w-full md:w-[300px] pl-9 rounded-full bg-slate-100 focus-visible:ring-slate-200'
         placeholder='Search for a course'
