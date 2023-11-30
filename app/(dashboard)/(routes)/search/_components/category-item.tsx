@@ -50,7 +50,7 @@ export const CategoryItem = ({
       )}
       type='button'
     >
-      {Icon && <Icon size={20} />}
+      {Icon && <Icon size={25} />}
       <div className='truncate'>{label}</div>
     </button>
   );
